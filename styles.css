@@ -1,0 +1,70 @@
+body {
+    background-image: url('CHOSSO.gif'); /* Replace with the path to your GIF */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #add8e6;
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add margin above the button */
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.left-text, .right-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff69b4;
+    font-size: 3rem;
+    font-weight: bold;
+    user-select: none; /* Prevent text selection */
+}
+
+.left-text {
+    left: 10%;
+}
+
+.right-text {
+    right: 10%;
+}
